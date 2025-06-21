@@ -1,3 +1,5 @@
+{{ `<!-- _default/li.html -->` | safeHTML }}
+
 <div class="post-preview item" data-tags="{{ with .Params.tags }} {{- delimit  (apply (apply . "lower" ".") "urlquery" ".") "," -}} {{ end }}">
   <a href="{{ .RelPermalink }}">
       <h2 class="post-title">{{ .Title }}</h2>

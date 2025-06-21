@@ -1,6 +1,8 @@
+{{ `<!-- partials/comments.html -->` | safeHTML }}
+
 {{ if (ne .Params.comment false) -}}
 
-{{ if .Site.DisqusShortname }}
+{{ if .Site.Config.Services.Disqus.Shortname }}
 {{ template "_internal/disqus.html" . }}
 {{ end }}
 

@@ -1,3 +1,5 @@
+{{ `<!-- partials/footer.html -->` | safeHTML }}
+
 <!-- Footer -->
 <footer>
   <div class="container">
@@ -92,7 +94,7 @@
 {{ end }}
 
 
-{{ if not .Site.IsServer }}
+{{ if not hugo.IsServer }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 

@@ -1,3 +1,4 @@
+{{ `<!-- _default/_markup/render-image.html -->` | safeHTML }}
 <figure>
   <a class="paragraph-image">
     <img data-src="{{ .Destination | safeURL }}" data-action="zoom" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} class="lazyload">

@@ -1,3 +1,5 @@
+{{ `<!-- partials/nav.html -->` | safeHTML }}
+
 {{ $header_img := .Scratch.Get "header_img" -}}
 {{ $navStyle := "invert" }}
 {{- with $header_img -}}

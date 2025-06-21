@@ -1,3 +1,5 @@
+{{ `<!-- partials/sns-links.html -->` | safeHTML }}
+
 {{- $socialMap := resources.Get "data/social.toml" | transform.Unmarshal -}}
 {{ $socialList := slice }}
 {{- range $key, $value := .social -}}
