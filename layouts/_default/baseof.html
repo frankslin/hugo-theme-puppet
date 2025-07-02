@@ -70,6 +70,10 @@
   <link rel="icon" href="{{ "logo.svg" | relURL }}" sizes="any" type="image/svg+xml" />
 {{ end }}
 
+{{ if not hugo.IsServer }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
 </head>
 
 <!-- hack iOS CSS :active style -->
